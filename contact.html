@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="contact, help, request">
+    <meta name="description" content="contact form, question form, coffee shop contact">
+    <title>Modero Coffee Contact </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="modero.css" rel="stylesheet" />
+    <style>
+      .bg{
+        opacity: 0.4;
+      }
+      h1{
+        font-size: 4em;
+      }
+    </style>
+</head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a><a class="navbar-brand" href="modero_index.html"><img src="modero.png.png" alt="logo" style="max-width: 250px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="drink.html" >Drink Menu</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="food.html">Food Menu </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredients.html">Ingredients </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="https://moderocoffee.square.site/">Online Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="tour.html">3D-Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="bg"></div>
+        <div class="bg-text">
+              <h1>Contact Us!</h1>
+
+<p>Please contact us with any inquiries about the shop, catering, or wholesale coffee.
+
+  <form action="ContactAction.cfm" method="post">
+  
+  <div class="form-group">
+    <label for="RecName" class="col-sm-3 control-label">Your Name*</label>
+      <div class="col-sm-9">
+      <input type="text" class="form-control" name="RecName" id="RecName" title="Your name required" aria-required="true" data-error-msg="Please tell us your name" required="required" maxlength="50">
+      </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="RecEmail" class="col-sm-3 control-label">Email*</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" name="RecEmail" id="RecEmail" aria-required="true" data-error-msg="Please tell us your e-mail address"  title="Your email address required" required="required" maxlength="50">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="RecPhone" class="col-sm-3 control-label">Phone</label>
+    <div class="col-sm-9">
+      <input type="tel" class="form-control" name="RecPhone" id="RecPhone" aria-required="false" data-error-msg="Please provide us with a valid phone number" maxlength="50">
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="RecInquiry" class="col-sm-3 control-label">Question</label>
+    <div class="col-sm-9">
+      <textarea class="form-control" name="RecInquiry" id="RecInquiry"></textarea>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-12" style="text-align: center;">
+      <img src="/CFFileServlet/_cf_captcha/_captcha_img5160945507356699399.png" style="float: none;" alt="" height="50" width="200" />
+  
+      <br /><label for="captcha">Please type what you see above<br />(it is case sensitive)</label><br />
+      <input type="text" name="userInput" id="captcha" maxlength="6" required="required" aria-required="true" data-error-msg="Please complete the captcha" style="width: inherit;"> <span style="color: #990000;">*</span>
+      <input type="hidden" name="hashVal" value="E05A6EF7B7F95E41793233944B9E7DF1">
+      
+    </div>
+  </div> 
+  
+  <div class="form-group">
+    <div class="col-sm-12" style="text-align: center;">
+      <input type="submit" value="Submit Request" class="btn btn-global">
+    </div>
+  </div>	
+  </form>
+        </div>
+  
+  
+  
+  
+  
+  </main>
+
+      <footer>
+        <address>
+           1050 Union University Drive ||
+           Jackson, TN  38305 ||
+           Phone: <a href="tel:+7316615509">731-661-5509</a>
+       </address>
+       <div class="icons">         
+        <a href="https://www.instagram.com/moderocoffee/?next=%2F" >
+         <ion-icon name="logo-instagram"></ion-icon></a>
+         <a href="https://www.facebook.com/moderocoffee" >
+           <ion-icon name="logo-facebook"></ion-icon>
+         </a>
+      
+       </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
